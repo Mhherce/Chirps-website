@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 60px;
+}
+
+.title {
+    color: blue;
+
+}
+
+.title {
+    color: blue;
+
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 70px;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.btn-nav {
+    display: flex;
+    gap: 10px;
+    background-color: blue;
+    padding: 10px 20px;
+}
+
+.btn-nav .fab {
+    color: white;
+}
+
+#toggle-menu,
+#close-menu {
+    display: none;
+}
+
+#Home {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: beige;
+}
+
+.analytic-image img {
+    width: 25vw;
+    height: auto;
+}
+
+.analytic-title {
+    text-align: justify;
+    font-size: 60px;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.analytics {
+    margin: 0px 20px;
+    padding: 10px;
+
+}
+
+.analytic-p,
+.analytic-p2 {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 200;
+    word-spacing: 1px;
+    line-height: 40px;
+    margin: 0px 20px;
+}
+
+
+.analytic-links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+    margin: 0px 20px;
+}
+
+.btn-analytic {
+    display: flex;
+    background-color: blue;
+    height: 65px;
+    width: 20vw;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding-top: 25px;
+    
+
+}
+
+.btn-analytic .fab {
+    align-items: center;
+    color: white;
+    margin: 0px 20px 20px 0;
+    font-size: 20px;
+
+}
+
+
+.analytic-link {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: -22px;
+}
+
+#analytic-icon {
+    padding: 0px 20px;
+
+}
+
+.analytic-social {
+    margin: 10px 0px;
+
+}
+
+.analytic-social>img {
+    position: relative;
+    right: -2px;
+    width: 60px;
+
+}
+
+.analytic-image {
+    margin-left: 60px;
+}
+
+.one {
+    position: absolute;
+    opacity: 10px;
+    z-index: 4000;
+    margin-left: -25px;
+}
+
+#Pricing {
+    margin: 50px 20px;
+}
+
+#Pricing h2 {
+    margin: 40px;
+    font-size: 50px;
+    width: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+
+.tweets {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.tweets>div {
+    border: 1px solid black;
+    margin: 25px 35px;
+    padding: 25px;
+}
+
+#tweets-icon {
+    font-size: 35px;
+    color: rgb(158, 158, 214);
+    margin: 10px;
+}
+
+.tweets h3 {
+    margin: 10px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+.tweets p {
+    font-size: 30px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+
+/* Media Queries for Mobile Versions */
+
+@media screen and (max-width: 721px) {
+
+    header {
+        margin: 30px;
+    }
+
+    .title {
+        font-weight: 700;
+    }
+
+    .nav-list {
+        margin: 30px;
+        gap: 30px;
+
+    }
+
+    #toggle-menu {
+        display: inline;
+        font-size: 24px;
+    }
+
+    #close-menu {
+        position: absolute;
+        top: 1.7rem;
+        right: 2rem;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 100;
+        transition: .5s;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        color: crimson;
+
+    }
+
+    .nav-item {
+        margin: 2rem 0;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .btn-nav {
+        display: flex;
+        background-color: blue;
+        height: 35px;
+        text-align: center;
+        justify-content: center;
+        margin-top: .5rem;
+        padding: 7px 13px;
+        color: white;
+        position: absolute;
+        top: 22rem;
+        left: -2.5rem;
+
+
+    }
+
+    .btn-nav .fab {
+        align-items: center;
+        color: white;
+        margin: 3px .4rem;
+
+    }
+
+    .txt-btn-nav {
+        margin-top: 1px;
+        font-weight: 600;
+    }
+
+    .analytics {
+        margin: 20px;
+        padding: 10px;
+
+    }
+
+    .analytic-title {
+        text-align: center;
+        font-size: 50px;
+        padding: 20px;
+        font-weight: 600;
+    }
+
+    .analytic-p,
+    .analytic-p2 {
+        text-align: justify;
+        font-size: 30px;
+        font-weight: 300;
+        word-spacing: 1px;
+        line-height: 50px;
+    }
+
+    .analytic-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-analytic {
+        display: flex;
+        background-color: blue;
+        height: 65px;
+        width: 90vw;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        padding-top: 15px;
+        margin: 20px 0px;
+
+    }
+
+    .btn-analytic .fab {
+        align-items: center;
+        color: white;
+        margin: 10px 20px 20px 0;
+        font-size: 20px;
+
+    }
+
+    .analytic-link {
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #analytic-icon {
+        padding: 0px 20px;
+
+    }
+
+    .analytic-social {
+        margin: 20px 0px;
+
+    }
+
+    .analytic-social>img {
+        position: relative;
+        right: -2px;
+        width: 60px;
+
+    }
+
+    .txt-btn-nav {
+        margin-top: 1px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .analytic-image img {
+        width: 80vw;
+        height: 10%;
+    }
+
+    .analytic-image {
+        margin-left: 60px;
+    }
+
+    .one {
+        position: absolute;
+        opacity: 10px;
+        z-index: 4000;
+        margin-left: -25px;
+    }
+
+    #Home {
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        gap: 0px;
+    }
+
+    #Pricing {
+        margin: 50px 20px;
+    }
+
+    #Pricing h2 {
+        margin: 20px;
+        font-size: 30px;
+    }
+
+    .tweets>div {
+        border: 1px solid black;
+        margin: 20px 30px;
+        padding: 20px;
+    }
+
+    #tweets-icon {
+        font-size: 30px;
+        color: rgb(158, 158, 214);
+        margin: 10px;
+    }
+
+    .tweets h3 {
+        margin: 10px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .tweets p {
+        font-size: 25px;
+        text-align: justify;
+        font-weight: 300;
+    }
+
+    .tweets {
+        display: block;
+
+    }
+
+    .customer {
+        background-color: rgb(204, 204, 223);
+    }
+
+    #Pricing h2 {
+        margin: 40px;
+        font-size: 20px;
+        width: 200px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+    .customer{
+        padding: 30px;
+    }
+    .customer-h{
+        padding: 30px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .review{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review > div{
+        background-color: white;
+        border-radius: 3px;
+        margin: 20px 20px 10px 40px;
+        width: 75vw;
+        
+    }
+
+    .head{
+        display: flex;
+    }
+
+}
+
+
+/* Media Queries for tablets Versions 471*/
+
+@media screen and (max-width: 931px) and (min-width: 722px) {
+    header {
+        margin: 40px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 40px;
+    }
+
+    .nav-list {
+        gap: 40px;
+        margin: 10px;
+    }
+
+    .nav-item {
+        font-weight: 400;
+
+    }
+
+    .btn-nav {
+        display: flex;
+        gap: 10px;
+        background-color: blue;
+
+    }
+
+    .analytics {
+        margin: 20px;
+        padding: 10px;
+
+    }
+
+    .analytic-title {
+        text-align: justify;
+        font-size: 55px;
+        padding: 20px;
+        font-weight: 600;
+    }
+
+    .analytic-image img {
+        width: 10%;
+        height: 10%;
+    }
+
+    .analytic-p,
+    .analytic-p2 {
+        text-align: justify;
+        font-size: 30px;
+        font-weight: 300;
+        word-spacing: 1px;
+        line-height: 50px;
+    }
+
+    .analytic-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-analytic {
+        display: flex;
+        background-color: blue;
+        height: 65px;
+        width: 90vw;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        /* padding-top: 15px;
+        margin: 20px 0px; */
+
+    }
+
+    .btn-analytic .fab {
+        align-items: center;
+        color: white;
+        margin: 10px 20px 20px 0;
+        font-size: 20px;
+
+    }
+
+    .analytic-link {
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #analytic-icon {
+        padding: 0px 20px;
+
+    }
+
+    .analytic-social {
+        margin: 20px 0px;
+
+    }
+
+    .analytic-social>img {
+        position: relative;
+        right: -2px;
+        width: 60px;
+
+    }
+
+    .txt-btn-nav {
+        margin-top: 1px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .analytic-image img {
+        width: 80vw;
+        height: 50%;
+    }
+
+    .analytic-image {
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+    .one {
+        position: absolute;
+        opacity: 10px;
+        z-index: 4000;
+        margin-left: -25px;
+    }
+
+    #Home {
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        gap: 0px;
+    }
+
+    #Pricing {
+        margin: 50px 20px;
+    }
+
+
+    #Pricing h2 {
+        margin: 20px;
+        font-size: 50px;
+    }
+
+
+    .tweets>div {
+        border: 1px solid black;
+        margin: 25px 35px;
+        padding: 25px;
+    }
+
+    #tweets-icon {
+        font-size: 35px;
+        color: rgb(158, 158, 214);
+        margin: 10px;
+    }
+
+    .tweets h3 {
+        margin: 10px;
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    .tweets p {
+        font-size: 30px;
+        text-align: justify;
+        font-weight: 300;
+    }
+
+    .tweets {
+        display: block;
+
+    }
+}
